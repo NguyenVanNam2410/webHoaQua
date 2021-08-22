@@ -61,14 +61,28 @@ $(document).ready(function(){
         $('html, body').animate({scrollTop : 0},800);
     });
 
+    $(".icon_child").click(function(){
+        $(".menu__sidebar").toggleClass('active');
+        $(".sidebar").addClass('active');
+        $(this).toggleClass('fa-bars fa-times');
+    });
+    $(".menu__sidebar").click(function(){
+        $(".sidebar").removeClass('active');
+        $(".menu__sidebar").removeClass('active');
+        $(".icon_child").toggleClass('fa-bars fa-times');
+    })
 });
 
 
 document.addEventListener("DOMContentLoaded",function(){
     var menu = document.querySelector(".hi");
     var HeightMenu = menu.offsetTop;
-    console.log(HeightMenu);
-    console.log(menu);
+    var menuChild = document.querySelector(".menu__child");
+    // var width_menuChild = menuChild.offsetTop;
+    // console.log(width_menuChild);
+    var Id__content = document.querySelector("#content");
+    console.log(menuChild);
+    var tt_menu1 = 'duoi26';
     var tt_menu = "duoi205";
 
     window.addEventListener('scroll',function(){
@@ -83,5 +97,21 @@ document.addEventListener("DOMContentLoaded",function(){
             }
             tt_menu = 'duoi205';
         }
+        if(window.pageYOffset > 26){
+            if(tt_menu1 == 'duoi26'){
+                menuChild.classList.add('active100');
+               
+            }
+            tt_menu1 = 'tren26';
+        }else if(window.pageYOffset < 26){
+            if(tt_menu1 == 'tren26'){
+                menuChild.classList.remove('active100');
+               
+            }
+            tt_menu1 = 'duoi26';
+        }
+
+
+
     });
 });

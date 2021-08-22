@@ -28,6 +28,9 @@
 }
 /*tablet*/
 @media (min-width:740px) and ( max-width: 1023px){
+    :root{
+        --num-product: 2;
+    }
     .hide-on-tablet{
         display: none;
     }
@@ -45,21 +48,174 @@
         font-size: 1.1rem;
         padding: 13px;
     }
-    .header__title p{
-        padding: 5px 10px;
+    .header__title{
+        margin-right: 15px;
+    }
+    .header__banner {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .header__title p{padding: 2px 10px;font-size: 1rem;}
+    .header__contact--search--post {height: 29px;}
+    .padding__logo {padding: 7px 0 7px 0 !important;}
+    .header__contact--phone {padding-right: 0px;}
+    .header__contact--phone, .header__contact--mail {font-size: 1rem;color: var(--text-color);padding: 10px 0 10px 0;margin-left: 10px;}
+    .header__image{width: 80%;}
+    .header__contact--search{margin-left: 10px;}
+    .header__navbar--icon--label
+    ,.header__navbar--link{
+        padding: 9px 10px;
+    }
+    .header__title--p {
+        padding-bottom: 10px !important;
+    }
+    .header__navbar--label{padding: 9px 10px; font-size: 1.2rem;}
+    .header__label {font-size: 1rem;}
+    /* about */
+    .aboutUs {height: 350px;}
+    .aboutUs__post {height: 350px;}
+    .heading {
+        padding-top: 25px;
+        padding-bottom: 15px;
+    }
+    .aboutUs__label {
+        font-size: 1.2rem;
+        line-height: 25px;
+    }
+    .button {
+        margin-top: 15px;
+        padding-top: 20px;
+    }
+    .btn {
+        padding: 10px 15px;
+        font-size: 1.2rem;
+    }
+    /* bigSale */
+    .BigSale__header--post {font-size: 1.6rem;line-height: 25px;}
+    .BigSale__header p {font-size: 1.3rem;line-height: 18px;}
+    .demo__time {padding: 10px 0;}
+    .hour {
+        font-size: 3rem;
+        line-height: 3rem;
+        padding-bottom: 25px;
+    }
+    .time__text {
+        font-size: 2rem;
+
+    }
+    .BigSale__img {
+        margin-top: 30px;
+    }
+    /* Save */
+    .Save__title h2 {
+        font-size: 2rem !important;
+    }
+    .SaveUp {
+        height: 165px;
+    }
+    .FreeShip {
+        height: 165px;
+    }
+    .Save__title h4 {
+       font-size: 1.8rem;
+    }
+    .Save__img2 img {
+        margin-top: 10px;
+    }
+    /* product */
+     /* --num-product: 4; */
+
+     .customer__text {
+        font-size: 1.6rem;
+    }
+    .customer__information {
+        font-size: 1.5rem;
+        line-height: 1.8rem ;
+    }
+    .news__img {
+        height: 200px;
+    }
+    .news__heading {
+        font-size: 1.4rem;
+       
+    }
+    .news__title p {
+        font-size: 1.2rem;
+    }
+    .news__time {
+        font-size: 1.2rem;
+    }
+    .mail__title--heading h2 {
+        padding-bottom: 10px;
+        font-size: 3rem;
+    }
+    .mail__title--footer p {
+        font-size: 1.4rem;
+    }
+    .mail__input {
+        height: 30px;
+        font-size: 1.4rem;
+        padding: 0 10px;
+    }
+    .mail__submit {
+        width: 70px;
+        height: 100%;
+        font-size: 1rem !important;
+        text-transform: none;
+    }
+    .mail__post--padding {
+        padding: 30px 0;
+    }
+    /* footer */
+    .footer__heading h2 {
+        font-size: 1.3rem;
+    }
+    .footer__introduce {
+        font-size: 1.2rem;
+        line-height: 1.7rem;
+        padding: 10px 0;
+    }
+    .footer__icon--item {
+        margin-right: 2px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 1.2rem;
+    }
+    .footer__address p {
+        font-size: 1.2rem;
+        padding-bottom: 10px;
+        overflow: hidden;
+        word-break :break-all
+    }
+    .header__title h3 {
+        font-size: 1.1rem;
+        padding: 5px;
+    }
+    .header__title p {
+        padding: 2px 10px;
         font-size: 1rem;
+        padding: 3px !important;
     }
-    .padding__logo {
-        padding: 10px 0 10px 0 !important;
+
+    .customer__text::before {
+        width: 25px;
+        left: -5px;
     }
-    .header__contact--phone {
-        padding-right: 0px;
+    .customer__text::after {
+        width: 25px;
+        right: -25px;
     }
-    .header__contact--phone, .header__contact--mail {
-        font-size: 1rem;
-        color: var(--text-color);
-        padding: 10px 0 10px 0;
-        margin-left: 10px;
+    .footer__bottom {
+        font-size: 1.5rem;
+        padding: 10px 0;
+    }
+    #arrow {
+        height: 30px;
+        width: 30px;
+        font-size: 1.6rem;
+        line-height: 30px;
+
     }
 }
 /*mobile*/
@@ -67,5 +223,105 @@
     .hide-on-mobile{
         display: none;
     }
-   
+    :root{
+        --num-product: 1;
+    }
+    .heading {
+        padding-top: 25px;
+        padding-bottom: 10px;
+    }
+    .content__heading {
+        font-size: 3rem;
+        margin: 0 0 15px 0;
+    }
+    .aboutUs {
+        margin-top: -10px;
+        width: 100%;
+        /* padding: 50%; */
+        height: 300px;
+    }
+    .aboutUs__post {
+        height: 300px;
+        /* padding: 50%; */
+    }
+    .aboutUs__label {
+        font-size: 1.3rem;
+        font-weight: 200;
+        line-height: 18px;
+        padding: 0 50px;
+    }
+    .btn {
+        padding: 8px 10px;
+        font-size: 1.2rem;
+    }
+    .button {
+        margin-top: 10px;
+        padding-top: 15px;
+    }
+    .BigSale__img img{
+        height: 90%;
+        width: 90%;
+    }
+    .BigSale{
+        margin: auto 20px;
+    }
+    #product{
+        margin-top: 40px;
+        margin: 40px 20px 0 20px;
+    }
+    .customer__information {
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+    }
+    .customer__text {
+        padding: 5px 10px;
+        font-size: 1.6rem;
+    }
+    #news{
+        margin: auto 20px;
+    }
+    .button2 {
+        padding-top: 20px;
+        margin: 0;
+        padding-bottom: 10px;
+    }
+    .mail__title--heading h2 {
+        padding-bottom: 10px;
+        font-size: 3rem;
+    }
+    .mail__title--footer p {
+        font-size: 1.5rem;
+    }
+    /* #mail{
+        margin: auto 20px;
+    } */
+    .mail__post--padding{
+        margin: auto 20px;
+    }
+    .mail__input {
+        height: 45px;
+        font-size: 1.4rem;
+    }
+    .mail__submit {
+        position:unset;
+        width: 100%;
+        height: 45px;
+       margin-top: 10px;
+    }
+    #footer{
+        margin: auto 20px;
+    }
+    .footer__icon {
+        padding-bottom: 20px;
+    }
+    .img_pro {
+        height:300px;
+    }
+    .menu__child{
+        display: block;
+    }
+    /* #content{
+        margin-top: 26px;
+    }
+     */
 }

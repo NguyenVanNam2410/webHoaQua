@@ -18,7 +18,7 @@
 </head>
 
 <body>
-    <div class="header__system">
+    <div class="header__system hide-on-mobile">
         <div class="grid wide">
             <div class="header__system--nav">
                 <p class="header__system--title">
@@ -32,12 +32,37 @@
 
         </div>
     </div>
-
-    <header class="header">
+    <div class="menu__child ">
+        <div class="grid wide">
+            <div class="menu__child--item">
+                <div class="menu__child--img">
+                    <img src="image/logo.png" alt="" srcset="">
+                </div>
+                <ul class="navbar__child">
+                    <li>
+                        <a href="#" class="menu__child--link">
+                            <i class="fas fa-search"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu__child--link">
+                            <i class="fas fa-shopping-basket"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu__child--link">
+                            <i class="fas fa-bars icon_child"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <header class="header hide-on-mobile">
         <div class="grid wide">
             <div class="header__banner">
                 <div class="header__logo">
-                    <a href=""><img src="image/logo.png" alt="" srcset=""></a>
+                    <a href=""><img class="header__image" src="image/logo.png" alt="" srcset=""></a>
                 </div>
                 <div class="header__title">
                     <h3 class="padding__logo">new daily holiday deals</h3>
@@ -67,7 +92,7 @@
                 </div>
             </div>
         </div>
-        <div id="menu" class="hi">
+        <div id="menu" class="hi hide-on-mobile">
             <div class="grid wide">
                 <nav class="header__navbar">
                     <ul class="header__navbar--item">
@@ -231,7 +256,7 @@
                 </div>
             </div>
         </div>
-        <div class="SaveFree">
+        <div class="SaveFree hide-on-mobile ">
             <div class="grid grid2">
                 <div class="no-gutters">
                     <div class="col1 l-6 m-6 c-12">
@@ -272,6 +297,40 @@
                                     </div>                            
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="save2 save3">
+            <div class="grid wide ">
+                <div class="row margin">
+                    <div class="col l-0 m-0 c-12">
+                        <div class="Free__ship">
+                            <img src="image/h1.png" alt=""  srcset="">
+                        </div>
+                    </div>
+                    <div class="col l-0 m-0 c-12">
+                        <div class="Save__title save__1">
+                            <h2>Save Up to 50%</h2>
+                            <h4 class="Save__title--h42">On your first purchase</h4>
+                            <div class="button">
+                                <a href="#" class="btn btn__shop">SHOP NOW</a>
+                            </div>
+                        </div>   
+                    </div>
+                    <div class="col l-0 m-0 c-12">
+                        <div class="Save__title">
+                            <h2>Free Shipping </h2>
+                            <h4 class="Save__title--h4">On order over $99</h4>
+                            <div class="button">
+                                <a href="#" class="btn btn__Free">TRACK NOW</a>
+                            </div>
+                        </div>      
+                    </div>
+                    <div class="col l-0 m-0 c-12">
+                        <div class="Free__ship">
+                            <img src="image/h2.png" alt=""  srcset="">
                         </div>
                     </div>
                 </div>
@@ -1119,6 +1178,27 @@
     </div>
     <div id="arrow">
         <i class="fas fa-arrow-up"></i>
+    </div>
+    <div class="menu__sidebar ">
+       
+            <ul class="sidebar">
+                <li>
+                    <a href="#">Trang chủ</a>
+                </li>
+                <li>
+                    <a href="#">Cửa hàng</a>
+                </li>
+                <li>
+                    <a href="#">Tin Tức</a>
+                </li>
+                <li>
+                    <a href="#">Giới thiệu</a>
+                </li>
+                <li>
+                    <a href="#">liên hệ</a>
+                </li>
+            </ul>
+    
     </div>
 
     <script src="javascript/jquery-3.6.0.min.js"></script>

@@ -519,7 +519,7 @@
     border-radius: 20px;
     background-color: rgb(255, 255, 255);
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    width: calc(25% - var(--width-product));
+    width: calc(calc(100% / var(--num-product)) - var(--width-product));
     margin-left: var(--width-product);
     /* padding-right: 15px; */
     /* padding-left: 15px; */
@@ -1108,4 +1108,97 @@
 }
 #arrow:hover{
     background-color: #EE5A24;
+}
+
+/* mobile */
+
+.margin{
+    margin: 20px !important;
+}
+.save3{
+    background-image: linear-gradient(#f4eede,#d4e0ab);
+}
+.Free__ship img{
+    width: 80%;
+    height: 80%;
+}
+.menu__child{
+    display: none;
+    background-color: var(--white-color);
+}
+.menu__child--item{
+    display: flex;
+    margin: 0 20px;
+    justify-content: space-between;
+}
+.menu__child--img img{
+    width: 60%;
+    height: 60%;
+    margin-top: 10px;
+}
+.navbar__child{
+    margin: 0;
+    padding: 0;
+}
+.navbar__child li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 15px;
+}
+.navbar__child li a{
+    font-size: 1.6rem;
+    color: var(--black-color);
+}
+.active100{
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    left: 0;
+    animation: fade linear .7s;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+/* .margin{
+    margin-top: 26px;
+} */
+
+.menu__sidebar{
+    position: fixed;
+    right: 0;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+    bottom: 0;
+    /* display: none; */
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: all 0.3s linear;
+    transform: translateX(-100%);
+}
+
+.sidebar{
+    background-color: var(--white-color);
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 280px;
+}
+.sidebar li{
+    display: block;
+    padding: 15px 20px;
+    list-style-type: none;
+    border-bottom: 1px solid #ccc;
+}
+.sidebar li a{
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--text-color);
+}
+.menu__sidebar.active{
+    /* display: block; */
+    transform: translateX(0);
+}
+.sidebar li:hover{
+    background-color: #b2bec3;
 }
